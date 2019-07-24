@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Time Card View Controller-->
+        <scene sceneID="fEi-SV-vz0">
+            <objects>
+                <viewController storyboardIdentifier="CreateTimeCardViewController" id="R4f-vo-rZU" customClass="CreateTimeCardViewController" customModule="Billable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dig-uT-cpa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Billable Rate (per hour)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYn-yg-rmg">
+                                <rect key="frame" x="82" y="94" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="89f-US-iM0"/>
+                                    <constraint firstAttribute="width" constant="250" id="Q6Y-m4-oZm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xih-pV-fi5">
+                                <rect key="frame" x="82" y="154" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="2Bs-Sq-VtF"/>
+                                    <constraint firstAttribute="height" constant="40" id="bUm-71-Po2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditing:" destination="R4f-vo-rZU" eventType="editingDidBegin" id="hfy-Dr-OQL"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b0G-S9-49B">
+                                <rect key="frame" x="82" y="214" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NcJ-wl-uYV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditing:" destination="R4f-vo-rZU" eventType="editingDidBegin" id="0J8-ir-bki"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGq-EJ-odV">
+                                <rect key="frame" x="82" y="274" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="21a-6s-LeA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditing:" destination="R4f-vo-rZU" eventType="editingDidBegin" id="a7W-O1-1dr"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Project" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGH-5z-3NJ">
+                                <rect key="frame" x="82" y="334" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VSx-gh-bkA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="projectTextFieldEditing:" destination="R4f-vo-rZU" eventType="editingDidBegin" id="t9y-T6-kVS"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U6-2Y-fa0">
+                                <rect key="frame" x="82" y="414" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.70196078429999997" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5as-h7-WAI"/>
+                                    <constraint firstAttribute="width" constant="250" id="LU5-qz-dii"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveTapped:" destination="R4f-vo-rZU" eventType="touchUpInside" id="DK6-Et-otB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TGq-EJ-odV" firstAttribute="top" secondItem="b0G-S9-49B" secondAttribute="bottom" constant="20" id="4PI-6D-jXc"/>
+                            <constraint firstItem="Xih-pV-fi5" firstAttribute="centerX" secondItem="VYn-yg-rmg" secondAttribute="centerX" id="4fI-wE-ZBz"/>
+                            <constraint firstItem="4U6-2Y-fa0" firstAttribute="centerX" secondItem="TGq-EJ-odV" secondAttribute="centerX" id="4xf-5T-mno"/>
+                            <constraint firstItem="BGH-5z-3NJ" firstAttribute="centerX" secondItem="TGq-EJ-odV" secondAttribute="centerX" id="6I6-3Q-KmR"/>
+                            <constraint firstItem="BGH-5z-3NJ" firstAttribute="top" secondItem="TGq-EJ-odV" secondAttribute="bottom" constant="20" id="7z8-Nh-8sh"/>
+                            <constraint firstItem="b0G-S9-49B" firstAttribute="top" secondItem="Xih-pV-fi5" secondAttribute="bottom" constant="20" id="P3x-zt-1Im"/>
+                            <constraint firstItem="Xih-pV-fi5" firstAttribute="top" secondItem="VYn-yg-rmg" secondAttribute="bottom" constant="20" id="Tsb-D1-Jg7"/>
+                            <constraint firstItem="TGq-EJ-odV" firstAttribute="centerX" secondItem="b0G-S9-49B" secondAttribute="centerX" id="bk8-7x-ePI"/>
+                            <constraint firstItem="VYn-yg-rmg" firstAttribute="centerX" secondItem="Dig-uT-cpa" secondAttribute="centerX" id="dYv-z8-VKa"/>
+                            <constraint firstItem="BGH-5z-3NJ" firstAttribute="width" secondItem="TGq-EJ-odV" secondAttribute="width" id="eaa-gZ-Ff8"/>
+                            <constraint firstItem="b0G-S9-49B" firstAttribute="width" secondItem="Xih-pV-fi5" secondAttribute="width" id="f6i-fX-jfh"/>
+                            <constraint firstItem="b0G-S9-49B" firstAttribute="centerX" secondItem="Xih-pV-fi5" secondAttribute="centerX" id="gHq-i8-ige"/>
+                            <constraint firstItem="VYn-yg-rmg" firstAttribute="top" secondItem="ecU-id-kRG" secondAttribute="top" constant="50" id="rbO-n6-Rjf"/>
+                            <constraint firstItem="4U6-2Y-fa0" firstAttribute="top" secondItem="BGH-5z-3NJ" secondAttribute="bottom" constant="40" id="uGb-md-bjN"/>
+                            <constraint firstItem="TGq-EJ-odV" firstAttribute="width" secondItem="b0G-S9-49B" secondAttribute="width" id="ucn-sG-ABY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ecU-id-kRG"/>
+                    </view>
+                    <connections>
+                        <outlet property="createButton" destination="4U6-2Y-fa0" id="Kjv-VI-vSa"/>
+                        <outlet property="dateTextField" destination="Xih-pV-fi5" id="PJo-QK-rku"/>
+                        <outlet property="endTimeTextField" destination="TGq-EJ-odV" id="LoO-oq-Meb"/>
+                        <outlet property="projectTextField" destination="BGH-5z-3NJ" id="N4l-HU-nl0"/>
+                        <outlet property="rateTextField" destination="VYn-yg-rmg" id="Ddg-za-Khb"/>
+                        <outlet property="startTimeTextField" destination="b0G-S9-49B" id="cYG-PK-XES"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mv0-di-S6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="136"/>
+        </scene>
+    </scenes>
+</document>

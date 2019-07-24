@@ -1,0 +1,15 @@
+/* 
+  Login.strings
+  Billable
+
+  Created by Johnson Ejezie on 21/07/2019.
+  Copyright © 2019 Johnson Ejezie. All rights reserved.
+*/
+
+EMPLOYEE_ID_TEXTFIELD_PLACEHOLDER = "Employee ID";
+PASSWORD_TEXTFIELD_PLACEHOLDER = "Password";
+LOGIN = "Log in";
+EMPTY_PASSWORD = "Password can not be empty";
+EMPTY_EMPLOYEE_ID = "Employee id can not be empty";
+INVALID_EMPLOYEE_ID = "Invalid employee id. ID must be numbers only";
+
